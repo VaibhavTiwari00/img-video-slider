@@ -28,8 +28,8 @@ function dragdown(e) {
 }
 function dragup() {
     down = false
-    console.log(prevpage)
-    console.log(prevscroll )
+    // console.log(prevpage)
+    // console.log(prevscroll )
 
 }
 
@@ -39,7 +39,7 @@ let icon = document.getElementsByClassName("icon");
 firstImg = item.getElementsByClassName("slide-box")[0];
 let srcremove = document.getElementsByClassName("responsive-iframe")
 let srcopen = srcremove[0].src;
-console.log(srcopen)
+// console.log(srcopen)
 let currentActive = 0;
 for (let i = 0; i < icon.length; i++) {
     icon[i].addEventListener("click", function () {
@@ -55,7 +55,7 @@ for (let i = 0; i < icon.length; i++) {
                 item.scrollLeft = 0;
                 return;
             }
-            console.log(currentActive)
+            // console.log(currentActive)
             item.scrollLeft += firstImgWidth
         }
         else {
@@ -65,7 +65,7 @@ for (let i = 0; i < icon.length; i++) {
                 return;
             }
             currentActive -= 1;
-            console.log(currentActive)
+            // console.log(currentActive)
             item.scrollLeft -= firstImgWidth
         }
 
@@ -74,7 +74,8 @@ for (let i = 0; i < icon.length; i++) {
 
 ////////////////////////////////////////////////////////////////////////////////
 let slidebox = document.getElementsByClassName("slide-box")
-let play = document.querySelectorAll(".dark img");
+let play = document.querySelectorAll(".dark .img");
+console.log(play)
 let videopage = document.querySelectorAll(".slide-box .video-page");
 
 for (let i = 0; i < slidebox.length; i++) {
@@ -87,8 +88,10 @@ for (let i = 0; i < slidebox.length; i++) {
         document.getElementsByClassName("play")[i].classList.remove("play-button")
     })
     play[i].addEventListener("click", function () {
-        videopage[i].classList.add("block-vedio")
+        videopage[i].classList.add("block-vedio");
+        console.log(videopage[i])
         srcremove[i].src = srcopen;
+        console.log(srcremove[i].src)
     })
 }
 

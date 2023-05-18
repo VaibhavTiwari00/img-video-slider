@@ -100,7 +100,7 @@
 .play:hover #icon-1{
     display: none;
 }
-.play >img{
+.play > .img > img{
     width: 35px;
     height: auto;
 }
