@@ -6,6 +6,7 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+
 .page-5>h2 {
     font-size: 44px;
     font-weight: 500;
@@ -14,7 +15,7 @@
     color: #13162b;
     font-size: 36px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    text-transform: uppercase; text-align: center;margin-top: 5%;
 }
 
 
@@ -176,7 +177,7 @@
 @media screen and (max-width: 900px) {
     .page-5>h2 {
     font-size: 24px;
-    text-align: center;margin-top: 5%;
+   
   
 }
     .page-5-box{
