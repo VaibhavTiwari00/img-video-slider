@@ -23,7 +23,7 @@
 .page-5-box {
     width: 90%;
     max-width: 1050px;
-    padding: 5%;
+    padding: 5% 0;
     display: grid;
     grid-template-columns: 8% auto 8%;
     margin: 0 auto;
