@@ -37,8 +37,10 @@ function dragup() {
 
 let icon = document.getElementsByClassName("icon");
 firstImg = item.getElementsByClassName("slide-box")[0];
+let sliderbox = item.getElementsByClassName("slide-box");
 let srcremove = document.getElementsByClassName("responsive-iframe")
 let srcopen = srcremove[0].src;
+let total = sliderbox.length;
 // console.log(srcopen)
 let currentActive = 0;
 for (let i = 0; i < icon.length; i++) {
@@ -50,7 +52,7 @@ for (let i = 0; i < icon.length; i++) {
         let firstImgWidth = firstImg.clientWidth;
         if (i == 1) {
             currentActive += 1;
-            if (currentActive == 4) {
+            if (currentActive == total) {
                 currentActive = 0
                 item.scrollLeft = 0;
                 return;
