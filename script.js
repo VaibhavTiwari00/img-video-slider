@@ -38,7 +38,7 @@ function dragup() {
 let icon = document.getElementsByClassName("icon");
 firstImg = item.getElementsByClassName("slide-box")[0];
 let sliderbox = item.getElementsByClassName("slide-box");
-let srcremove = document.getElementsByClassName("responsive-iframe")
+let srcremove = document.querySelectorAll("source");
 let srcopen = srcremove[0].src;
 let total = sliderbox.length;
 // console.log(srcopen)
